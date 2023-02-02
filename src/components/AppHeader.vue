@@ -64,7 +64,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    height: 15vh;
+    
 
 
 }
@@ -75,7 +75,7 @@ ul {
 
      
         li {
-            padding: 61px 15px;
+            padding: 60px 15px;
             
         }
 

@@ -1,6 +1,20 @@
 <script >
+import DigitalComicsCard from './DigitalComicsCard.vue';
+import DcMerchandiseCard from './DcMerchandiseCard.vue';
+import SubscriptionCard from './SubscriptionCard.vue';
+import ComicShopLocatorCard from './ComicShopLocatorCard.vue';
+import DcPowerVisaCard from './DcPowerVisaCard.vue';
+
     export default {
       name: 'AppMain',
+      components: {
+        DigitalComicsCard,
+        DcMerchandiseCard,
+        SubscriptionCard,
+        ComicShopLocatorCard,
+        DcPowerVisaCard,
+
+      }
 
     }
 </script>
@@ -21,7 +35,14 @@
     <div class="bottom-main">
 
         <div class="container">
-
+            <div class="cards">
+                <DigitalComicsCard/>
+                <DcMerchandiseCard/>
+                <SubscriptionCard/>
+                <ComicShopLocatorCard/>
+                <DcPowerVisaCard/>
+            </div>
+         
         </div>
 
     </div>
@@ -37,22 +58,31 @@ main {
 
     h1 {
         color: white;
+        padding: 40px 0;
     }
 }
 
 
 .top-main {
-    height: 15vh;
+    
     display: flex;
     align-items: center;
 }
 
 
 .bottom-main {
-    height: 55vh;
-    background-image: url("../assets/img/footer-bg.jpg");
     
-    background-size: cover;
+    background-color: #0282f9;
+
+   
+    
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+    
 }
 
 </style>
