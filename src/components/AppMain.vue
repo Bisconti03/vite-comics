@@ -124,9 +124,12 @@ import CardElement from './CardElement.vue';
                     v-for="comic in comics"  />
 
                 </div>
-                <button class="load">
+                <div class="load">
+                    <button >
                         LOAD MORE
                 </button>
+                </div>
+                
         </div>
 
 
@@ -190,8 +193,13 @@ main {
 
 
 .top-main {
-    text-align: center;
+    
     padding-bottom: 30px;
+
+    .load {
+        display: flex;
+        justify-content: center;
+    }
 
     button {
         color: white;
