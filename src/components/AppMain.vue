@@ -232,13 +232,14 @@ main {
 .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    
     padding: 50px 0;
 
     .comic {
-        width: calc(100% / 6);
+        width: calc((100% / 6) - 15px);
         color: white;
-        padding: 10px;
+        padding: 15px 30px;
       
     }
 
