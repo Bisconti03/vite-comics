@@ -106,21 +106,27 @@ import CardElement from './CardElement.vue';
 <template>
   <main>
     <div class="jumbo">
+        <div class="current-series">
+            CURRENT SERIES
+        </div>
                     
     </div>
     
     <div class="container">
-        <div>
+        <div class="top-main">
             
                 <div class="products">
                    
 
                     <CardElement class="comic" 
-                    :series="comic.series" 
+                    :series="comic.series.toUpperCase()" 
                     :img="comic.thumb" 
                     v-for="comic in comics"  />
+
                 </div>
-           
+                <button class="load">
+                        LOAD MORE
+                </button>
         </div>
 
 
@@ -163,16 +169,49 @@ main {
         height: 45vh;
         background-image: url(../assets/img/jumbotron.jpg);
         background-size: 100% auto;
+        position: relative;
+
+        .current-series {
+            position: absolute;
+            background-color: #0282f9;
+            color: white;
+            padding: 10px 50px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            
+            left: 150px;
+            bottom: 0;
+            transform: translateY(+50%);
+           
+            
+        }
     }
 
 
+
+.top-main {
+    text-align: center;
+    padding-bottom: 30px;
+
+    button {
+        color: white;
+        background-color: #0282f9;
+        padding: 10px 70px;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+}
 .bottom-main {
     
     background-color: #0282f9;
+    
 
    
     
 }
+
+
 
 .cards {
     display: flex;
@@ -192,12 +231,7 @@ main {
         width: calc(100% / 6);
         color: white;
         padding: 10px;
-        
-        
-        
-
-
-        
+      
     }
 
 }

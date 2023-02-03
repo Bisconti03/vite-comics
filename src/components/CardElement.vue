@@ -12,9 +12,9 @@
 
 <template>
 
-    <div>
+    <div >
 
-        <div>
+        <div >
             <img :src="img" alt="">
         </div>
 
@@ -28,9 +28,22 @@
 
 <style lang="scss" scoped>
 
+
+
+
+
+
+img:hover {
+    cursor: pointer;
+
+
+}
+
 h5 {
     
-    padding-top: 10px;
+    padding-top: 15px ;
+    padding-right: 15px;
+    
 }
     
 </style>

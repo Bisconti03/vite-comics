@@ -75,7 +75,7 @@ ul {
 
      
         li {
-            padding: 60px 15px;
+            padding: 50px 15px;
             
         }
 
